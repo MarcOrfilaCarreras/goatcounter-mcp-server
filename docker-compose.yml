@@ -1,0 +1,7 @@
+services:
+  goatcounter-mcp:
+    image: ghcr.io/marcorfilacarreras/goatcounter-mcp-server:latest
+    build: .
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
